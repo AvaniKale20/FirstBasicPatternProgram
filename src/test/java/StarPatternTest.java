@@ -15,5 +15,10 @@ public class StarPatternTest {
         Assertions.assertEquals("* * \n * *", squareStarPattern.print());
     }
 
+    @Test
+    public void givenNInputWithThreeByThree_WhenPrint_ThenShouldBePrintFourStar() {
+        StarPattern squareStarPattern = new StarPattern(3);
+        Assertions.assertEquals("* * * \n * * * \n * * *", squareStarPattern.print());
+    }
 
 }

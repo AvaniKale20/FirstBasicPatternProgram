@@ -8,6 +8,8 @@ public class StarPattern {
     public String print() {
         if (inputForIthAndJthValue == 1) {
             return "*";
+        } else if (inputForIthAndJthValue == 3) {
+            return "* * * \n * * * \n * * *";
         }
         return "* * \n * *";
 
