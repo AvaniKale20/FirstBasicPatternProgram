@@ -6,12 +6,17 @@ public class StarPattern {
     }
 
     public String print() {
-        if (inputForIthAndJthValue == 1) {
-            return "*";
-        } else if (inputForIthAndJthValue == 3) {
-            return "* * * \n * * * \n * * *";
-        }
-        return "* * \n * *";
 
+        String output = "";
+
+        for (int i = 0; i < inputForIthAndJthValue; i++) {
+            for (int j = 0; j < inputForIthAndJthValue; j++) {
+                output += "*";
+            }
+            if (i != inputForIthAndJthValue - 1) {
+                output += "\n";
+            }
+        }
+        return output;
     }
 }

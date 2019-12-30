@@ -12,13 +12,19 @@ public class StarPatternTest {
     @Test
     public void givenNInputWithTwoByTwo_WhenPrint_ThenShouldBePrintFourStar() {
         StarPattern squareStarPattern = new StarPattern(2);
-        Assertions.assertEquals("* * \n * *", squareStarPattern.print());
+        Assertions.assertEquals("**\n**", squareStarPattern.print());
     }
 
     @Test
-    public void givenNInputWithThreeByThree_WhenPrint_ThenShouldBePrintFourStar() {
+    public void givenNInputWithThreeByThree_WhenPrint_ThenShouldBePrintNineStar() {
         StarPattern squareStarPattern = new StarPattern(3);
-        Assertions.assertEquals("* * * \n * * * \n * * *", squareStarPattern.print());
+        Assertions.assertEquals("***\n***\n***", squareStarPattern.print());
+    }
+
+    @Test
+    public void givenNInputWithFourByFour_WhenPrint_ThenShouldBePrintSixteenStar() {
+        StarPattern squareStarPattern = new StarPattern(4);
+        Assertions.assertEquals("****\n****\n****\n****", squareStarPattern.print());
     }
 
 }
